@@ -1,5 +1,7 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/version', __FILE__)
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'funny_thing/version'
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Conrad Taylor"]
@@ -13,7 +15,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "funny_thing"
   gem.require_paths = ["lib"]
-  gem.version       = VERSION
+  gem.version       = FunnyThing::VERSION
 
   # specify any dependencies here; for example:
   gem.add_development_dependency 'minitest',            '~> 3.2.0'
