@@ -1,4 +1,4 @@
 source 'http://rubygems.org'
 
-# Specify your gem's dependencies in chatapp.gemspec
+# Specify your gem's dependencies in funny_thing.gemspec
 gemspec
